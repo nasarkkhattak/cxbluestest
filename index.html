@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CXB | Human-Centric Fintech Infrastructure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --brand-indigo: #1e1b4b;
+        --brand-amber: #fbbf24;
+        --brand-mint: #34d399;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #0f172a; /* Deep Indigo-Slate */
+        color: #f8fafc;
+        overflow-x: hidden;
+      }
+      h1, h2, h3, h4, .futuristic {
+        font-family: 'Space Grotesk', sans-serif;
+      }
+      .glass-effect {
+        background: rgba(30, 41, 59, 0.5);
+        backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .gradient-text {
+        background: linear-gradient(135deg, var(--brand-amber) 0%, var(--brand-mint) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .market-grid {
+        background-image: linear-gradient(rgba(251, 191, 36, 0.02) 1px, transparent 1px),
+                          linear-gradient(90deg, rgba(251, 191, 36, 0.02) 1px, transparent 1px);
+        background-size: 60px 60px;
+      }
+      @keyframes float-market {
+        0% { transform: translateY(0px) rotate(0deg); opacity: 0.05; }
+        50% { transform: translateY(-30px) rotate(2deg); opacity: 0.12; }
+        100% { transform: translateY(0px) rotate(0deg); opacity: 0.05; }
+      }
+      .animate-market {
+        animation: float-market 12s ease-in-out infinite;
+      }
+      .glow-amber {
+        box-shadow: 0 0 30px rgba(251, 191, 36, 0.15);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.39.0",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root" class="market-grid min-h-screen"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

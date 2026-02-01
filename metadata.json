@@ -1,0 +1,8 @@
+{
+  "name": "CXBlues - Fintech & Prop Firm Support Solutions",
+  "description": "A high-performance rebranding platform for CXBlues, offering specialized customer experience and support infrastructure for the Fintech and Proprietary Trading sectors.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
